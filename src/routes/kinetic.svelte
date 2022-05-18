@@ -1,11 +1,6 @@
-<h1 class="uppercase text-center">Kinetic Energy Calculator</h1>
-
-<div class="flex flex-col w-64">
-    <input class="bg-gray-300 rounded-md my-3 p-1" type="text" placeholder="Mass" bind:value={mass} />
-    <input class="bg-gray-300 rounded-md my-3 p-1" type="text" placeholder="Velocity" bind:value={velocity} />
-</div>
 
 <script>
+    import {slide} from 'svelte/transition'
     let mass;
     let velocity;
     let kineticEnergy; 
@@ -15,6 +10,14 @@
     }
 </script>
 
-<p>Kinetic Energy: {kineticEnergy}</p>
+<div transition:slide>
+    <h1 class="uppercase text-center">Kinetic Energy Calculator</h1>
+    
+    <div class="flex flex-col w-64">
+        <input class="bg-gray-300 rounded-md my-3 p-1" type="text" placeholder="Mass" bind:value={mass} />
+        <input class="bg-gray-300 rounded-md my-3 p-1" type="text" placeholder="Velocity" bind:value={velocity} />
+    </div>
+    <p>Kinetic Energy: {kineticEnergy}</p>
+</div>
 
 
