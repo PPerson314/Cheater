@@ -1,6 +1,6 @@
 
 <script>
-    import {slide} from 'svelte/transiton'
+    import {slide} from 'svelte/transition'
     let volts;
     let ohms;
     let amps;
