@@ -16,5 +16,5 @@
     }
 </script>
 
-<img {src} alt="hi" />
+<img class="w-14 h-14" {src} alt="hi" />
 <p>Cat Energy Energy: {DaCat}</p>

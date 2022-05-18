@@ -9,7 +9,8 @@
     @tailwind components;
     @tailwind utilities;
 </style> 
-
-<ReturnHome />
-<slot></slot> 
-<Nav />
+<div class="w-auto h-auto bg-slate-200 flex flex-col justify-between">
+    <ReturnHome />
+    <slot></slot> 
+    <Nav />
+</div>
