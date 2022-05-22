@@ -1,4 +1,3 @@
-
 <script>
     import {slide} from 'svelte/transition'
     let bigcat;
