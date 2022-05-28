@@ -9,7 +9,7 @@
     @tailwind components;
     @tailwind utilities;
 </style> 
-<div class="w-auto h-auto bg-slate-200 flex flex-col justify-between">
+<div class="bg-slate-200 w-full min-h-screen flex flex-col justify-between">
     <ReturnHome />
     <slot></slot> 
     <Nav />
